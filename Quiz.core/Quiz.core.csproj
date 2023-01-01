@@ -8,8 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Mapping\" />
-    <Folder Include="Source\Exception\" />
-    <Folder Include="Source\Repository\" />
   </ItemGroup>
 
   <ItemGroup>
