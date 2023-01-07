@@ -21,7 +21,7 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.SignIn.RequireConfirmedEmail = false;
 
 });
-builder.Services.UseQuiz();
+//builder.Services.UseQuiz();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

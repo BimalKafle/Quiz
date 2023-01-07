@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Quiz.core.Mapping;
+using Quiz.core.Source.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,11 +39,12 @@ namespace Quiz.core.DbContextConfig
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            
 
-
+            modelBuilder.ApplyConfiguration(new ApplicationUserMapping());
+            modelBuilder.ApplyConfiguration(new AnswerMapping());
 
 
         }
+        
     }
 }

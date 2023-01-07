@@ -8,6 +8,10 @@ namespace Quiz.core.Source.Entity
 {
     public class Answer
     {
+        protected Answer()
+        {
+        }
+
         public Answer(string description,Question question)
         {
             Question = question;
